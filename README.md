@@ -193,11 +193,3 @@ export const videoProjectsData = {
 -   **Backend**: Resend (Email), Server Actions
 
 ---
-
-<div align="center">
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=maruf-pfc/niloy-bhowmick&type=Date)](https://star-history.com/#maruf-pfc/niloy-bhowmick&Date)
-
-</div>
