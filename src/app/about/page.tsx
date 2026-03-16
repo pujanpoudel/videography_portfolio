@@ -16,7 +16,8 @@ import {
   Award,
   Clock,
   Zap,
-  Quote
+  Quote,
+  MessageCircle
 } from "lucide-react";
 import { clientsData } from "@/db/clients";
 
@@ -178,9 +179,9 @@ export default function AboutPage() {
               description=""
               header={
                 <div className="flex flex-1 h-full w-full items-center justify-between px-6 bg-gradient-to-r from-neutral-900 to-neutral-800 rounded-xl border border-white/5 py-4 md:py-0 min-h-[5rem]">
-                  <a href="#" target="_blank" className="p-3 bg-white/5 rounded-full hover:bg-[#0077b5] hover:scale-110 transition-all duration-300 text-white"><Linkedin size={20} /></a>
-                  <a href="#" target="_blank" className="p-3 bg-white/5 rounded-full hover:bg-pink-600 hover:scale-110 transition-all duration-300 text-white"><Instagram size={20} /></a>
-                  <a href="#" target="_blank" className="p-3 bg-white/5 rounded-full hover:bg-red-600 hover:scale-110 transition-all duration-300 text-white"><Youtube size={20} /></a>
+                  <a href="https://www.instagram.com/shaileshmahat0/" target="_blank" className="p-3 bg-white/5 rounded-full hover:bg-pink-600 hover:scale-110 transition-all duration-300 text-white" title="Instagram"><Instagram size={20} /></a>
+                  <a href="https://www.facebook.com/shailesh.mahato.993418" target="_blank" className="p-3 bg-white/5 rounded-full hover:bg-[#1877F2] hover:scale-110 transition-all duration-300 text-white" title="Facebook"><Facebook size={20} /></a>
+                  <a href="https://wa.me/9866307745" target="_blank" className="p-3 bg-white/5 rounded-full hover:bg-[#25D366] hover:scale-110 transition-all duration-300 text-white" title="WhatsApp"><MessageCircle size={20} /></a>
                 </div>
               }
               className="h-full"

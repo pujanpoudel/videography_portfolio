@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import {
-  Linkedin,
-  Twitter,
-  Youtube,
+  Facebook,
+  MessageCircle,
   Mail,
   Instagram,
 } from "lucide-react";
@@ -14,24 +13,19 @@ export default function Footer() {
 
   const socialLinks = [
     {
-      name: "YouTube",
-      href: "#",
-      icon: Youtube,
-    },
-    {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/shaileshmahat0/",
       icon: Instagram,
     },
     {
-      name: "LinkedIn",
-      href: "#",
-      icon: Linkedin,
+      name: "Facebook",
+      href: "https://www.facebook.com/shailesh.mahato.993418",
+      icon: Facebook,
     },
     {
-      name: "Twitter",
-      href: "#",
-      icon: Twitter,
+      name: "WhatsApp",
+      href: "https://wa.me/9866307745",
+      icon: MessageCircle,
     },
     {
       name: "Email",
