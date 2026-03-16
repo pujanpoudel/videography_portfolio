@@ -6,7 +6,6 @@ import {
   Twitter,
   Youtube,
   Mail,
-  Heart,
   Instagram,
 } from "lucide-react";
 
@@ -36,7 +35,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      href: "mailto:shailesh@example.com",
+      href: "mailto:shaileshmahato1125@gmail.com",
       icon: Mail,
     },
   ];
@@ -45,13 +44,12 @@ export default function Footer() {
     <footer className="glass-panel border-t border-white/5 mt-20 backdrop-blur-3xl">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-3 gap-12">
-          {/* Brand */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
               Shailesh Mahato
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Videographer and Video Editor passionate about
+              Photographer and Video Editor passionate about
               capturing moments and creating visual stories with style,
               precision, and cinematic magic.
             </p>
@@ -118,17 +116,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/5 mt-16 pt-8 text-center">
-          <p className="text-gray-500 text-sm flex items-center justify-center gap-1.5">
-            Made with <Heart className="text-red-500 fill-red-500/20" size={14} /> by{" "}
-            <a
-              href="https://www.linkedin.com/in/mdmarufsarker/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors underline decoration-dotted underline-offset-4"
-            >
-              Md. Maruf Sarker
-            </a>{" "}
-            © {currentYear}
+          <p className="text-gray-500 text-sm">
+            © {currentYear} Shailesh Mahato. All rights reserved.
           </p>
         </div>
       </div>

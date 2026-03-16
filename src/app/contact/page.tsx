@@ -9,7 +9,7 @@ import { Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { toast } from "sonner"
 
 export default function ContactPage() {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const form = e.currentTarget;
@@ -21,34 +21,12 @@ export default function ContactPage() {
     const projectType = formData.get("project-type") as string;
     const timeline = formData.get("timeline") as string;
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const mailtoLink = `mailto:shaileshmahato1125@gmail.com?subject=New Project Inquiry: ${projectType || 'General'}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nProject Type: ${projectType || 'Not specified'}\nTimeline: ${timeline || 'Not specified'}\n\nMessage:\n${message}`
+    )}`;
 
-    if (!emailRegex.test(email)) {
-      toast("Please enter a valid email address.")
-      return;
-    }
-
-    if (!message || message.length < 30) {
-      toast("Message should be at least 30 characters long.");
-      return;
-    }
-
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message, projectType, timeline }),
-    });
-
-    const result = await res.json();
-
-    if (res.ok) {
-      toast("Message sent successfully!");
-      form.reset();
-    } else {
-      toast(result.error || "Something went wrong.");
-    }
+    window.location.href = mailtoLink;
+    toast("Opening your mail client...");
   };
 
   return (
@@ -90,10 +68,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
                     <a
-                      href="mailto:shailesh@example.com"
+                      href="mailto:shaileshmahato1125@gmail.com"
                       className="text-white hover:text-blue-400 transition-colors"
                     >
-                      shailesh@example.com
+                      shaileshmahato1125@gmail.com
                     </a>
                   </div>
                 </div>
@@ -103,14 +81,14 @@ export default function ContactPage() {
                     <MessageCircle className="text-white" size={20} />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm">WhatsApp</p>
+                    <p className="text-gray-400 text-sm">WhatsApp / Phone</p>
                     <a
-                      href="#"
+                      href="https://wa.me/9779866307745"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-green-400 transition-colors"
                     >
-                      Contact via WhatsApp
+                      +977 9866307745
                     </a>
                   </div>
                 </div>
@@ -218,7 +196,7 @@ export default function ContactPage() {
                       type="email"
                       required
                       className="bg-gray-800/50 border-gray-600 text-white"
-                      placeholder="you@example.com"
+                      placeholder="user@gmail.com"
                     />
                   </div>
                 </div>
@@ -292,7 +270,7 @@ export default function ContactPage() {
                 <p className="text-gray-400 text-sm text-center">
                   Prefer to chat directly? Reach out on{" "}
                   <a
-                    href="#"
+                    href="https://wa.me/9779866307745"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300"

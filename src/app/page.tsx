@@ -96,7 +96,7 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
-              From cinematic shoots to smooth transitions, precise audio syncing and dynamic
+              From cinematic shoots and photographic sessions to smooth transitions, precise audio syncing and dynamic
               animations — I focus on making your content not just polished, but
               <span className="text-blue-400 font-medium"> powerful</span>.
             </p>

@@ -10,7 +10,7 @@ import {
   Zap,
 } from "lucide-react";
 
-export const videoEditingSkills = [
+export const professionalSkills = [
   {
     name: "DaVinci Resolve",
     image_link: "/tools/DaVinci_Resolve_Studio.png",
@@ -42,11 +42,11 @@ export const videoEditingSkills = [
     color: "text-cyan-400",
   },
   {
-    name: "Adobe Audition",
-    image_link: "/tools/Adobe_Audition_CC.png",
-    icon: Volume2,
-    description: "Audio editing, noise reduction, and sound enhancement",
-    color: "text-green-400",
+    name: "Adobe Lightroom",
+    image_link: "/tools/Adobe_Lightroom.png",
+    icon: Camera,
+    description: "Professional photo editing, color correction, and management",
+    color: "text-blue-500",
   },
 ];
 
@@ -111,6 +111,17 @@ export const specializations = [
     description: "Creating eye-catching animations that enhance storytelling",
   },
   {
+    title: "Professional Photography",
+    skills: [
+      "Portraiture",
+      "Event Coverage",
+      "Product Photography",
+      "Color Correction",
+    ],
+    icon: "📸",
+    description: "Capturing high-quality imagery that tells a compelling story through a single frame.",
+  },
+  {
     title: "Color Grading",
     skills: [
       "Cinematic Looks",
@@ -120,7 +131,7 @@ export const specializations = [
     ],
     icon: "🎨",
     description:
-      "Professional color work that gives videos a polished, cinematic feel",
+      "Professional color work that gives both photos and videos a polished, cinematic feel",
   },
 ];
 
@@ -140,9 +151,9 @@ export const achievements = [
     color: "text-green-400",
   },
   {
-    title: "3+ Years Experience",
+    title: "5+ Years Experience",
     description:
-      "Professional video editing experience with continuous skill development",
+      "Professional photography and video editing experience with continuous skill development",
     icon: Camera,
     color: "text-blue-400",
   },

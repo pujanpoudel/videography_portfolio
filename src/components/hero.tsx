@@ -23,9 +23,9 @@ export default function Hero() {
     return (
         <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
             {/* Background Ambience */}
-            <div className="absolute inset-0 z-0">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/10 rounded-full blur-[120px] animate-pulse" />
-                <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-900/10 rounded-full blur-[100px]" />
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/5 rounded-full blur-[60px] animate-pulse will-change-transform" />
+                <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-900/5 rounded-full blur-[50px] will-change-transform" />
             </div>
 
             <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -68,7 +68,7 @@ export default function Hero() {
                     transition={{ duration: 0.6, delay: 0.6 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed mb-12"
                 >
-                    Capturing moments and crafting visual stories — with style, precision, and a touch of <span className="text-white font-medium">cinematic magic</span>.
+                    Capturing moments through the lens and crafting visual stories — with style, precision, and a touch of <span className="text-white font-medium">cinematic magic</span>.
                 </motion.p>
 
                 {/* Buttons */}

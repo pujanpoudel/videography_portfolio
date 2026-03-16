@@ -32,10 +32,10 @@ export default function AboutPage() {
           className="text-center mb-8"
         >
           <h1 className="text-4xl md:text-6xl font-bold mt-0 md:mt-20 mb-3 text-white tracking-tight">
-            The Man Behind the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Magic</span>
+            The Person Behind the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Lens</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Videographer. Video Editor. Visual Storyteller.
+            Photographer. Videographer. Visual Storyteller.
           </p>
         </motion.div>
 
@@ -53,12 +53,18 @@ export default function AboutPage() {
               header={
                 <div className="relative w-full h-full min-h-[28rem] md:min-h-[16rem] rounded-xl overflow-hidden group-hover/bento:scale-[1.02] transition-transform duration-500">
                   <Image
-                    src="/niloybhowmick.png"
-                    alt="Shailesh"
+                    src="/hero.webp"
+                    alt="Shailesh Mahato"
                     fill
-                    className="object-cover object-top grayscale-[0] hover:grayscale-0 transition-all duration-500"
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-all duration-700 brightness-[0.9] contrast-[1.1]"
+                    style={{ objectPosition: 'center 15%' }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90" />
+                  {/* Premium Blending Overlays */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
 
                   {/* Name Overlay */}
                   <div className="absolute bottom-6 left-6 right-6">
@@ -73,7 +79,7 @@ export default function AboutPage() {
                     </motion.div>
                     <div className="h-1 w-16 md:w-20 bg-purple-500 mt-4 rounded-full" />
                     <p className="text-gray-300 mt-4 text-xs md:text-sm font-medium tracking-wide uppercase">
-                      Professional Videographer & Video Editor
+                      Professional Photographer & Video Editor
                     </p>
                   </div>
                 </div>

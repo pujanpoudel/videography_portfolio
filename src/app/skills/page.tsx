@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import CTASection from "@/components/CTASection";
 import {
-  videoEditingSkills,
+  professionalSkills,
   specializations,
   achievements,
   workflow,
@@ -46,13 +46,11 @@ export default function SkillsPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-0 md:mt-20 mb-6 text-white">
-            My Skills & Expertise
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-0 md:mt-20 mb-6 text-white text-center">
+            My <span className="text-blue-500">Creative</span> & Technical Skills
           </h1>
           <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto">
-            With years of experience in video editing and motion graphics, I
-            bring technical expertise and creative vision to every project.
-            Here's what I can do for you.
+            Specializing in photography, professional video editing, and motion graphics to bring stories to life.
           </p>
         </motion.div>
 
@@ -67,7 +65,7 @@ export default function SkillsPage() {
             Technical Skills
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {videoEditingSkills.map((skill, index) => (
+            {professionalSkills.map((skill, index) => (
               <motion.div
                 key={skill.name}
                 initial={{ opacity: 0, x: -20 }}

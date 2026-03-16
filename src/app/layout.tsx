@@ -15,27 +15,26 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Shailesh Mahato – Videographer & Video Editor",
+    default: "Shailesh Mahato – Photographer, Videographer & Video Editor",
     template: "%s | Shailesh Mahato",
   },
   description:
-    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Shailesh Mahato specializes in videography, video editing, color grading, and motion graphics — delivering cinematic edits and polished storytelling.",
+    "Turning moments into visual stories — with style, precision, and cinematic magic. Shailesh Mahato specializes in photography, videography, and high-end video editing, delivering polished storytelling and cinematic visuals.",
   keywords: [
     "Shailesh Mahato",
+    "Photographer",
     "Videographer",
     "Video Editor",
+    "Photography Portfolio",
     "DaVinci Resolve",
     "Premiere Pro",
     "After Effects",
     "Color Grading",
-    "YouTube Video Editing",
     "Cinematic Videography",
     "Visual Storytelling",
-    "Freelance Videographer",
+    "Freelance Photographer",
     "Cinematic Editing",
     "Content Creator",
-    "Motion Graphics",
-    "Audio Sync",
   ],
   authors: [{ name: "Shailesh Mahato" }],
   creator: "Shailesh Mahato",
@@ -54,32 +53,32 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Shailesh Mahato – Videographer & Video Editor",
+    title: "Shailesh Mahato – Photographer, Videographer & Video Editor",
     description:
-      "Passionate Videographer and Video Editor delivering clean, cinematic edits and dynamic visual storytelling using DaVinci Resolve, Premiere Pro, and After Effects.",
+      "Passionate Photographer and Video Editor delivering clean, cinematic edits and dynamic visual storytelling.",
     siteName: "Shailesh Mahato Portfolio",
     images: [
       {
-        url: "/niloybhowmick.png",
+        url: "/hero.webp",
         width: 1200,
         height: 630,
-        alt: "Shailesh Mahato - Videographer & Video Editor",
+        alt: "Shailesh Mahato - Photographer & Video Editor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shailesh Mahato – Videographer & Video Editor",
+    title: "Shailesh Mahato – Photographer, Videographer & Video Editor",
     description:
-      "Crafting cinematic edits, stunning videography, and powerful stories. Let's make your content stand out.",
+      "Crafting cinematic edits, stunning photography, and powerful stories. Let's make your content stand out.",
     creator: "@shailesh_mahato",
-    images: ["/niloybhowmick.png"],
+    images: ["/hero.webp"],
   },
   verification: {
     google: "your-google-verification-code",
   },
   alternates: {},
-  category: "Videography & Video Editing",
+  category: "Photography & Videography",
 };
 
 export default function RootLayout({
@@ -100,18 +99,15 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Shailesh Mahato",
-              image: "/niloybhowmick.png",
+              image: "/hero.webp",
               sameAs: [],
-              jobTitle: "Videographer & Video Editor",
+              jobTitle: "Photographer & Video Editor",
               knowsAbout: [
+                "Photography",
                 "Videography",
                 "Video Editing",
-                "Motion Graphics",
-                "DaVinci Resolve",
-                "Adobe Premiere Pro",
-                "Adobe After Effects",
                 "Color Grading",
-                "Audio Syncing",
+                "Cinematography",
               ],
               worksFor: {
                 "@type": "Organization",
