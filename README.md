@@ -22,57 +22,40 @@
 -   **AWS Amplify**: Full-stack deployment with API integration.
 -   **GitHub Pages**: Static deployment (limited functionality).
 
+## 🤝 Support & Contact
+
+- **Email**: [shaileshmahato1125@gmail.com](mailto:shaileshmahato1125@gmail.com)
+- **WhatsApp**: [+977 9866307745](https://wa.me/9779866307745)
+
 ## 📂 Project Structure
 
 ```plaintext
-📦niloy-bhowmick
+📦videography-portfolio
  ┣ 📂public
  ┃ ┣ 📂companies
  ┃ ┣ 📂project-images
  ┃ ┣ 📂tools
+ ┃ ┃ ┗ 📜Adobe_Lightroom.png
  ┃ ┣ 📜demo.png
- ┃ ┣ 📜logo-transparent.png
- ┃ ┣ 📜logo-white.png
- ┃ ┣ 📜niloybhowmick.png
- ┃ ┗ 📜not-found.jpg
+ ┃ ┗ 📜hero.webp
  ┣ 📂src
  ┃ ┣ 📂app
- ┃ ┃ ┣ 📂_services
  ┃ ┃ ┣ 📂about
- ┃ ┃ ┣ 📂api
- ┃ ┃ ┃ ┗ 📂send-email
  ┃ ┃ ┣ 📂contact
  ┃ ┃ ┣ 📂project
  ┃ ┃ ┣ 📂skills
- ┃ ┃ ┣ 📜favicon.ico
- ┃ ┃ ┣ 📜globals.css
- ┃ ┃ ┣ 📜layout.tsx
- ┃ ┃ ┣ 📜loading.tsx
- ┃ ┃ ┣ 📜not-found.tsx
  ┃ ┃ ┗ 📜page.tsx
  ┃ ┣ 📂components
- ┃ ┃ ┣ 📂animate-ui
- ┃ ┃ ┣ 📂ui
- ┃ ┃ ┣ 📜CTASection.tsx
- ┃ ┃ ┣ 📜email-template.tsx
  ┃ ┃ ┣ 📜footer.tsx
- ┃ ┃ ┣ 📜glassmorphism-card.tsx
- ┃ ┃ ┣ 📜intro-animation.tsx
- ┃ ┃ ┣ 📜jump-to-top.tsx
- ┃ ┃ ┣ 📜mouse-move-effect.tsx
- ┃ ┃ ┣ 📜navbar.tsx
- ┃ ┃ ┗ 📜theme-provider.tsx
+ ┃ ┃ ┣ 📜hero.tsx
+ ┃ ┃ ┗ 📜navbar.tsx
  ┃ ┣ 📂db
- ┃ ┃ ┣ 📜categories.ts
- ┃ ┃ ┣ 📜clients.ts
- ┃ ┃ ┣ 📜data.ts
  ┃ ┃ ┗ 📜skills.ts
- ┃ ┣ 📂hooks
+ ┣ 📂hooks
  ┃ ┃ ┗ 📜use-mobile.tsx
- ┃ ┣ 📂lib
+ ┣ 📂lib
  ┃ ┃ ┣ 📜helper.ts
  ┃ ┃ ┗ 📜utils.ts
- ┃ ┣ 📂styles
  ┃ ┗ 📂types
  ┃ ┃ ┣ 📜cta.ts
  ┃ ┃ ┗ 📜videos.ts
